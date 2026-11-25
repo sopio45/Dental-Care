@@ -1,0 +1,17 @@
+/* Site header and navigation */
+.site-header { background: var(--color-white); }
+.site-header__inner { display: flex; min-height: 5.25rem; align-items: center; justify-content: space-between; gap: 2rem; }
+.brand { display: inline-flex; flex-direction: column; line-height: 1; color: var(--color-primary); }
+.brand__title { font-size: 1.75rem; font-weight: 700; letter-spacing: -.08em; }
+.brand__title span, .footer-logo span { color: var(--color-accent); }
+.brand__tagline { margin-top: .25rem; color: var(--color-muted); font-size: .45rem; font-weight: 700; letter-spacing: .22em; }
+.primary-nav__list, .site-header__actions, .lang-switcher { display: flex; align-items: center; }
+.primary-nav__list { gap: clamp(1rem, 2.6vw, 2.5rem); }
+.primary-nav a, .lang-switcher a { color: var(--color-muted); font-size: var(--font-size-xs); font-weight: 600; transition: color var(--transition); }
+.primary-nav a:hover, .lang-switcher a:hover, .lang-switcher .is-active { color: var(--color-primary); }
+.site-header__actions { gap: 1.5rem; }
+.lang-switcher { gap: .45rem; }
+.lang-switcher a { font-size: .6rem; }
+.menu-link { display: none; }
+.welcome-card__message{position: absolute; left: 50%; top: 50%; transform: translateX(-50%);}
+.welcome-card{ position: relative;}

@@ -1,0 +1,153 @@
+/* Miloa Dental Care — entry point. Original 19/ structure retained. */
+@import url("abstracts/variables.css");
+@import url("abstracts/resets.css");
+@import url("abstracts/commons.css");
+
+/* Page components */
+@import url("componets/header.css");
+@import url("componets/featured.css");
+@import url("componets/content.css");
+@import url("componets/booking.css");
+@import url("componets/footer.css");
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .site-header__inner {
+    gap: 1rem;
+  }
+  .primary-nav__list {
+    gap: 1rem;
+  }
+  .site-header__actions {
+    gap: 0.8rem;
+  }
+  .hero__grid {
+    gap: 2rem;
+  }
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .booking__grid {
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 680px) {
+  :root {
+    --section-space: 4rem;
+  }
+  .site-header__inner {
+    min-height: 4.5rem;
+  }
+  .primary-nav {
+    display: none;
+  }
+  .site-header__actions {
+    margin-left: auto;
+  }
+  .lang-switcher {
+    display: none;
+  }
+  .menu-link {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    padding: 0.35rem;
+  }
+  .menu-link span {
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--color-primary);
+  }
+  .hero {
+    padding-block: 3rem;
+  }
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .hero__content h1 {
+    font-size: clamp(2.65rem, 12vw, 4rem);
+  }
+  .welcome-card {
+    min-height: 13rem;
+  }
+  .stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.5rem;
+  }
+  .section-heading {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .section-heading > p {
+    padding-top: 0;
+  }
+  .services-grid {
+    gap: 0.65rem;
+  }
+  .service-card {
+    min-height: 9.5rem;
+    padding: 0.9rem;
+  }
+  .doctors-grid,
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .doctor-card img {
+    aspect-ratio: 1.65;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-item img {
+    height: 15rem;
+  }
+  .faq__grid,
+  .booking__grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-map {
+    grid-column: 1 / -1;
+  }
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+@media (max-width: 420px) {
+  .btn--small {
+    min-height: 2.25rem;
+    padding-inline: 0.75rem;
+  }
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .service-card h3 {
+    font-size: 0.78rem;
+  }
+  .service-card p {
+    font-size: 0.68rem;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-map {
+    grid-column: auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

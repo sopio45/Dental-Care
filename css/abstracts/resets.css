@@ -1,0 +1,10 @@
+/* Modern, predictable baseline */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body, h1, h2, h3, p, ul, figure, blockquote { margin: 0; }
+ul { padding: 0; list-style: none; }
+img { display: block; max-width: 100%; position: relative; }
+a { color: inherit; text-decoration: none; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid rgb(8 127 120 / 35%); outline-offset: 3px; }
